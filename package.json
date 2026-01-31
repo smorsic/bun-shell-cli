@@ -1,0 +1,39 @@
+{
+  "name": "bun-shell-cli",
+  "version": "0.1.0",
+  "description": "Run Bun Shell scripts via a CLI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smorsic/bun-shell-cli.git"
+  },
+  "author": "Scott Morse",
+  "keywords": [
+    "bun",
+    "shell",
+    "scripts",
+    "script"
+  ],
+  "main": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "bun-shell": "file:.",
+    "eslint": "^9.39.2",
+    "eslint-plugin-import": "^2.32.0",
+    "globals": "^17.2.0",
+    "prettier": "^3.8.1",
+    "typescript-eslint": "^8.54.0"
+  },
+  "dependencies": {
+    "bun-run-scripts": "^0.1.0"
+  },
+  "scripts": {
+    "cli": "bun run bin/cli.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  }
+}
