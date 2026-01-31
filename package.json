@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Run Bun Shell scripts via a CLI",
   "license": "MIT",
+  "bin": {
+    "bun-shell-cli": "bin/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/smorsic/bun-shell-cli.git"
